@@ -42,7 +42,7 @@ nav {
 .nav-links a {
   color: black;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .burger {
@@ -51,14 +51,14 @@ nav {
 }
 
 .burger div {
-  width: 25px;
-  height: 3px;
+  width: 1.5625rem;
+  height: 0.1875rem;
   background-color: black;
-  margin: 4px;
+  margin: 0.25rem;
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 80rem) {
   .nav-links {
     display: flex;
     justify-content: space-evenly;
@@ -66,23 +66,23 @@ nav {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   .logo a {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
   nav {
     justify-content: space-around;
     align-items: center;
-    min-height: 10vh;
+    min-height: 8vh;
   }
   body {
     overflow-x: hidden;
   }
   .nav-links {
     position: absolute;
-    right: 0px;
-    height: 65vh;
-    top: 10vh;
+    right: 0rem;
+    height: 64vh;
+    top: 8vh;
     background-color: #eeeeee;
     display: flex;
     flex-direction: column;
@@ -106,16 +106,16 @@ nav {
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(3.125rem);
   }
   to {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0rem);
   }
 }
 
 .toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 5px);
+  transform: rotate(-45deg) translate(-0.3125rem, 0.3125rem);
 }
 
 .toggle .line2 {
@@ -123,5 +123,5 @@ nav {
 }
 
 .toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -5px);
+  transform: rotate(45deg) translate(-0.3125rem, -0.3125rem);
 }
