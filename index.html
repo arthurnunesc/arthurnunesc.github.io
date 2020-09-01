@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -21,10 +22,9 @@
         <a href="#">Arthur Nunes</a>
       </div>
       <ul class="nav-links">
-        <li><a href="#">início</a></li>
-        <li><a href="#">projetos</a></li>
-        <li><a href="#">sobre</a></li>
-        <li><a href="#">contato</a></li>
+        <li><a href="#about">sobre</a></li>
+        <li><a href="#projects">projetos</a></li>
+        <li><a href="#contact">contato</a></li>
       </ul>
       <div class="burger">
         <div class="line1"></div>
@@ -32,6 +32,38 @@
         <div class="line3"></div>
       </div>
     </nav>
+    <div class="text">
+      <div id="about">
+        <br />
+        <h2>Olá, meu nome é Arthur Nunes.</h2>
+        <img src="arthur.JPG" alt="arthur" class="center" />
+        <br />
+        <p>
+          Sou um estudante de Ciência da Computação, residente de Fortaleza e à
+          procura de um estágio relacionado à programação.
+        </p>
+      </div>
+      <br />
+      <div id="projects">
+        <h4>
+          Todos meus projetos relevantes estão no
+          <a href="https://github.com/arthurnunesc">Github.</a>
+        </h4>
+      </div>
+      <br />
+      <br />
+      <div id="contact" class="form">
+        <h4>Entre em contato comigo!</h4>
+        <form action="https://formspree.io/mjvaqpor" method="POST">
+          <br />
+          <p>Mensagem:</p>
+          <input class="input-field" type="text" name="name" />
+          <p>Seu email:</p>
+          <input class="input-field" type="email" name="_replyto" />
+          <input class="input-field" type="submit" value="Enviar" />
+        </form>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
