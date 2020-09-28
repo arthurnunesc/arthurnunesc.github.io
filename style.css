@@ -9,6 +9,8 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
 }
 
 nav {
@@ -28,6 +30,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  bottom: 0;
   width: 100%;
   min-height: 6vh;
   background-color: #fafafa;
@@ -35,7 +39,6 @@ footer {
   outline-width: 1px;
   outline-color: #eeeeee;
   z-index: 1;
-  position: relative;
 }
 
 footer h3 {
@@ -87,6 +90,7 @@ footer a {
   text-align: left;
   margin: 0 25% 0 25%;
   font-size: 20px;
+  padding-bottom: 6vh;
 }
 
 .text h4 {
