@@ -198,10 +198,10 @@ footer a {
 
 @media screen and (max-width: 767px) {
   .logo a {
-    font-size: 20px;
+    font-size: 24px;
   }
   .text h2 {
-    font-size: 26px;
+    font-size: 28px;
   }
   nav {
     justify-content: space-around;
