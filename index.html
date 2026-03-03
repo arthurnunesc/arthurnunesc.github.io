@@ -101,11 +101,11 @@
 
     <!-- ─── Navigation ─── -->
     <nav class="fixed top-0 inset-x-0 z-50 bg-dark/80 backdrop-blur-md border-b border-border">
-        <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
-            <a href="#" class="font-mono font-bold text-accent text-sm tracking-wide">~/arthurnunesc</a>
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-mono font-bold text-accent text-base tracking-wide">~/arthurnunesc</a>
 
             <!-- Desktop links -->
-            <div class="hidden md:flex items-center gap-6 text-sm text-muted">
+            <div class="hidden md:flex items-center gap-7 text-base text-muted">
                 <a href="#about" class="hover:text-white transition-colors">about</a>
                 <a href="#skills" class="hover:text-white transition-colors">skills</a>
                 <a href="#experience" class="hover:text-white transition-colors">experience</a>
@@ -116,11 +116,11 @@
             <!-- Mobile hamburger -->
             <button @click="mobileMenu = !mobileMenu" class="md:hidden text-muted hover:text-white transition-colors"
                 aria-label="Menu">
-                <svg x-show="!mobileMenu" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                <svg x-show="!mobileMenu" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
                     viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
-                <svg x-show="mobileMenu" x-cloak xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                <svg x-show="mobileMenu" x-cloak xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
                     viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
@@ -132,7 +132,7 @@
             x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
             x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0"
             x-transition:leave-end="opacity-0 -translate-y-2" @click.away="mobileMenu = false"
-            class="md:hidden bg-surface border-b border-border px-6 py-4 flex flex-col gap-3 text-sm text-muted">
+            class="md:hidden bg-surface border-b border-border px-6 py-5 flex flex-col gap-4 text-base text-muted">
             <a href="#about" @click="mobileMenu = false" class="hover:text-white transition-colors">about</a>
             <a href="#skills" @click="mobileMenu = false" class="hover:text-white transition-colors">skills</a>
             <a href="#experience" @click="mobileMenu = false" class="hover:text-white transition-colors">experience</a>
@@ -143,28 +143,28 @@
 
 
     <!-- ─── Hero ─── -->
-    <header class="min-h-screen flex items-center justify-center px-6 pt-14">
-        <div class="max-w-2xl w-full flex flex-col items-center text-center gap-6">
+    <header class="min-h-screen flex items-center justify-center px-6 pt-16">
+        <div class="max-w-2xl w-full flex flex-col items-center text-center gap-8">
             <!-- Avatar -->
             <div class="relative">
                 <img src="https://media.licdn.com/dms/image/v2/C4D03AQEHCj7FGKRlOA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1651260269330?e=1773878400&v=beta&t=isG9OeYfPy82qIBtIchanh323Cng3lNg8H30MJHaC5Y"
                     alt="Arthur Nunes"
-                    class="w-32 h-32 rounded-full object-cover ring-2 ring-accent/30 ring-offset-4 ring-offset-dark" />
-                <span class="absolute bottom-1 right-1 w-4 h-4 bg-accent rounded-full ring-2 ring-dark"
+                    class="w-40 h-40 rounded-full object-cover ring-2 ring-accent/30 ring-offset-4 ring-offset-dark" />
+                <span class="absolute bottom-2 right-2 w-5 h-5 bg-accent rounded-full ring-2 ring-dark"
                     title="Available"></span>
             </div>
 
             <!-- Name & tagline -->
             <div>
-                <h1 class="font-mono text-3xl md:text-4xl font-bold text-white mb-2">Arthur Nunes</h1>
-                <p class="font-mono text-accent text-sm md:text-base h-6">
+                <h1 class="font-mono text-4xl md:text-5xl font-bold text-white mb-3">Arthur Nunes</h1>
+                <p class="font-mono text-accent text-base md:text-lg h-7">
                     <span class="text-muted">$</span> <span class="cursor-blink" x-text="typed"></span>
                 </p>
             </div>
 
             <!-- Location -->
-            <p class="text-muted text-sm flex items-center gap-1.5">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+            <p class="text-muted text-base flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -174,24 +174,24 @@
             </p>
 
             <!-- Social links -->
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-5">
                 <a href="https://github.com/arthurnunesc" target="_blank" rel="noopener"
                     class="text-muted hover:text-accent transition-colors" aria-label="GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
                         <path
                             d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
                     </svg>
                 </a>
                 <a href="https://www.linkedin.com/in/arthurnunesc" target="_blank" rel="noopener"
                     class="text-muted hover:text-accent transition-colors" aria-label="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
                         <path
                             d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                     </svg>
                 </a>
                 <a href="mailto:arthurnunesc@proton.me" class="text-muted hover:text-accent transition-colors"
                     aria-label="Email">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -199,7 +199,7 @@
                 </a>
                 <a href="https://arthurnun.es/" target="_blank" rel="noopener"
                     class="text-muted hover:text-accent transition-colors" aria-label="Personal site">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
@@ -209,7 +209,7 @@
 
             <!-- Scroll hint -->
             <div class="mt-12 text-muted animate-bounce">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                 </svg>
@@ -219,21 +219,21 @@
 
 
     <!-- ─── About ─── -->
-    <section id="about" class="py-24 px-6" x-ref="about">
+    <section id="about" class="py-28 px-6" x-ref="about">
         <div class="max-w-3xl mx-auto reveal-up" x-ref="reveal">
-            <h2 class="font-mono text-xs text-accent tracking-widest uppercase mb-6">// about</h2>
-            <div class="bg-surface border border-border rounded-lg p-6 md:p-8">
-                <p class="text-neutral-300 leading-relaxed mb-4">
+            <h2 class="font-mono text-sm text-accent tracking-widest uppercase mb-8">// about</h2>
+            <div class="bg-surface border border-border rounded-lg p-8 md:p-10">
+                <p class="text-neutral-300 text-lg leading-relaxed mb-5">
                     Hey, I'm <span class="text-white font-medium">Arthur</span> — a Brazilian software engineer based in
                     <span class="text-white font-medium">Barcelona</span>.
                 </p>
-                <p class="text-neutral-400 leading-relaxed mb-4">
+                <p class="text-neutral-400 text-lg leading-relaxed mb-5">
                     From my very first contact with programming at university, I knew I would work with it — it was love
                     at first sight. Since then, I've been exploring many areas in tech, especially <span
                         class="text-accent">Python</span>, <span class="text-accent">Linux</span>, and <span
                         class="text-accent">C programming</span>.
                 </p>
-                <p class="text-neutral-400 leading-relaxed">
+                <p class="text-neutral-400 text-lg leading-relaxed">
                     I always try to find time to study the things I love in tech, and the result of that is all on my <a
                         href="https://github.com/arthurnunesc" target="_blank" rel="noopener"
                         class="text-accent hover:underline">GitHub</a>, in the form of my many personal projects.
@@ -244,55 +244,55 @@
 
 
     <!-- ─── Skills ─── -->
-    <section id="skills" class="py-24 px-6">
+    <section id="skills" class="py-28 px-6">
         <div class="max-w-3xl mx-auto reveal-up" x-ref="reveal">
-            <h2 class="font-mono text-xs text-accent tracking-widest uppercase mb-6">// skills</h2>
+            <h2 class="font-mono text-sm text-accent tracking-widest uppercase mb-8">// skills</h2>
 
             <div class="space-y-8">
                 <!-- Technical -->
                 <div>
-                    <h3 class="text-xs text-muted uppercase tracking-wider mb-3 font-mono">Tech Stack</h3>
-                    <div class="flex flex-wrap gap-2">
+                    <h3 class="text-sm text-muted uppercase tracking-wider mb-4 font-mono">Tech Stack</h3>
+                    <div class="flex flex-wrap gap-3">
                         <span
-                            class="px-3 py-1.5 bg-surface border border-border rounded text-sm text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">Python</span>
+                            class="px-4 py-2 bg-surface border border-border rounded text-base text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">Python</span>
                         <span
-                            class="px-3 py-1.5 bg-surface border border-border rounded text-sm text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">Scrapy</span>
+                            class="px-4 py-2 bg-surface border border-border rounded text-base text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">Scrapy</span>
                         <span
-                            class="px-3 py-1.5 bg-surface border border-border rounded text-sm text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">Django</span>
+                            class="px-4 py-2 bg-surface border border-border rounded text-base text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">Django</span>
                         <span
-                            class="px-3 py-1.5 bg-surface border border-border rounded text-sm text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">Linux</span>
+                            class="px-4 py-2 bg-surface border border-border rounded text-base text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">Linux</span>
                         <span
-                            class="px-3 py-1.5 bg-surface border border-border rounded text-sm text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">Docker</span>
+                            class="px-4 py-2 bg-surface border border-border rounded text-base text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">Docker</span>
                         <span
-                            class="px-3 py-1.5 bg-surface border border-border rounded text-sm text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">C</span>
+                            class="px-4 py-2 bg-surface border border-border rounded text-base text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">C</span>
                         <span
-                            class="px-3 py-1.5 bg-surface border border-border rounded text-sm text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">Web
+                            class="px-4 py-2 bg-surface border border-border rounded text-base text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">Web
                             Crawling</span>
                         <span
-                            class="px-3 py-1.5 bg-surface border border-border rounded text-sm text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">Software
+                            class="px-4 py-2 bg-surface border border-border rounded text-base text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">Software
                             Docs</span>
                     </div>
                 </div>
 
                 <!-- Languages -->
                 <div>
-                    <h3 class="text-xs text-muted uppercase tracking-wider mb-3 font-mono">Languages</h3>
-                    <div class="flex flex-wrap gap-2">
+                    <h3 class="text-sm text-muted uppercase tracking-wider mb-4 font-mono">Languages</h3>
+                    <div class="flex flex-wrap gap-3">
                         <span
-                            class="px-3 py-1.5 bg-surface border border-border rounded text-sm text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">
-                            🇬🇧 English <span class="text-muted text-xs">C2</span>
+                            class="px-4 py-2 bg-surface border border-border rounded text-base text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">
+                            🇬🇧 English <span class="text-muted text-sm">C2</span>
                         </span>
                         <span
-                            class="px-3 py-1.5 bg-surface border border-border rounded text-sm text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">
-                            🇧🇷 Portuguese <span class="text-muted text-xs">native</span>
+                            class="px-4 py-2 bg-surface border border-border rounded text-base text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">
+                            🇧🇷 Portuguese <span class="text-muted text-sm">native</span>
                         </span>
                         <span
-                            class="px-3 py-1.5 bg-surface border border-border rounded text-sm text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">
-                            🇪🇸 Spanish <span class="text-muted text-xs">native</span>
+                            class="px-4 py-2 bg-surface border border-border rounded text-base text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">
+                            🇪🇸 Spanish <span class="text-muted text-sm">native</span>
                         </span>
                         <span
-                            class="px-3 py-1.5 bg-surface border border-border rounded text-sm text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">
-                            🏴 Catalan <span class="text-muted text-xs">C2</span>
+                            class="px-4 py-2 bg-surface border border-border rounded text-base text-neutral-300 font-mono hover:border-accent/50 hover:text-accent transition-colors cursor-default">
+                            🏴 Catalan <span class="text-muted text-sm">C2</span>
                         </span>
                     </div>
                 </div>
@@ -302,28 +302,28 @@
 
 
     <!-- ─── Experience ─── -->
-    <section id="experience" class="py-24 px-6">
+    <section id="experience" class="py-28 px-6">
         <div class="max-w-3xl mx-auto reveal-up" x-ref="reveal">
-            <h2 class="font-mono text-xs text-accent tracking-widest uppercase mb-6">// experience</h2>
+            <h2 class="font-mono text-sm text-accent tracking-widest uppercase mb-8">// experience</h2>
 
             <div class="space-y-6">
 
                 <!-- Centric Software -->
                 <div
-                    class="group bg-surface border border-border rounded-lg p-6 hover:border-accent/30 transition-colors">
-                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-3">
+                    class="group bg-surface border border-border rounded-lg p-8 hover:border-accent/30 transition-colors">
+                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-4">
                         <div>
-                            <h3 class="text-white font-medium">Web Crawling Engineer</h3>
-                            <p class="text-accent text-sm font-mono">Centric Software</p>
+                            <h3 class="text-white font-medium text-lg">Web Crawling Engineer</h3>
+                            <p class="text-accent text-base font-mono">Centric Software</p>
                         </div>
-                        <span class="text-muted text-xs font-mono shrink-0">Jun 2023 — Present</span>
+                        <span class="text-muted text-sm font-mono shrink-0">Jun 2023 — Present</span>
                     </div>
-                    <p class="text-neutral-400 text-sm leading-relaxed">
+                    <p class="text-neutral-400 text-base leading-relaxed">
                         Part of the Data Collection team of Centric Market Intelligence (formerly StyleSage). Building
                         and maintaining web crawlers for large-scale fashion data extraction.
                     </p>
-                    <div class="mt-3 flex items-center gap-1.5 text-xs text-muted">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24"
+                    <div class="mt-4 flex items-center gap-2 text-sm text-muted">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -335,21 +335,21 @@
 
                 <!-- DIO -->
                 <div
-                    class="group bg-surface border border-border rounded-lg p-6 hover:border-accent/30 transition-colors">
-                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-3">
+                    class="group bg-surface border border-border rounded-lg p-8 hover:border-accent/30 transition-colors">
+                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-4">
                         <div>
-                            <h3 class="text-white font-medium">DIO Campus Expert — 3rd Edition</h3>
-                            <p class="text-accent text-sm font-mono">Digital Innovation One</p>
+                            <h3 class="text-white font-medium text-lg">DIO Campus Expert — 3rd Edition</h3>
+                            <p class="text-accent text-base font-mono">Digital Innovation One</p>
                         </div>
-                        <span class="text-muted text-xs font-mono shrink-0">Apr 2022 — Jun 2022</span>
+                        <span class="text-muted text-sm font-mono shrink-0">Apr 2022 — Jun 2022</span>
                     </div>
-                    <p class="text-neutral-400 text-sm leading-relaxed">
+                    <p class="text-neutral-400 text-base leading-relaxed">
                         Selected as one of few participants from Ceará for a program accelerating careers in tech.
                         Covered Data Science, Web Development, Cybersecurity, and soft skills through mentorships and
                         courses.
                     </p>
-                    <div class="mt-3 flex items-center gap-1.5 text-xs text-muted">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24"
+                    <div class="mt-4 flex items-center gap-2 text-sm text-muted">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -361,20 +361,20 @@
 
                 <!-- ANC -->
                 <div
-                    class="group bg-surface border border-border rounded-lg p-6 hover:border-accent/30 transition-colors">
-                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-3">
+                    class="group bg-surface border border-border rounded-lg p-8 hover:border-accent/30 transition-colors">
+                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-4">
                         <div>
-                            <h3 class="text-white font-medium">Technical Support Staff</h3>
-                            <p class="text-accent text-sm font-mono">ANC Tecnologia</p>
+                            <h3 class="text-white font-medium text-lg">Technical Support Staff</h3>
+                            <p class="text-accent text-base font-mono">ANC Tecnologia</p>
                         </div>
-                        <span class="text-muted text-xs font-mono shrink-0">Mar 2021 — Jun 2022</span>
+                        <span class="text-muted text-sm font-mono shrink-0">Mar 2021 — Jun 2022</span>
                     </div>
-                    <p class="text-neutral-400 text-sm leading-relaxed">
+                    <p class="text-neutral-400 text-base leading-relaxed">
                         Advised clients on hardware needs, built personal and work computers, and provided end-to-end
                         support. Helped customers with software issues on both Windows and Linux systems.
                     </p>
-                    <div class="mt-3 flex items-center gap-1.5 text-xs text-muted">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24"
+                    <div class="mt-4 flex items-center gap-2 text-sm text-muted">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -390,35 +390,35 @@
 
 
     <!-- ─── Education ─── -->
-    <section id="education" class="py-24 px-6">
+    <section id="education" class="py-28 px-6">
         <div class="max-w-3xl mx-auto reveal-up" x-ref="reveal">
-            <h2 class="font-mono text-xs text-accent tracking-widest uppercase mb-6">// education</h2>
+            <h2 class="font-mono text-sm text-accent tracking-widest uppercase mb-8">// education</h2>
 
             <div class="space-y-6">
 
                 <!-- 42 -->
-                <div class="bg-surface border border-border rounded-lg p-6 hover:border-accent/30 transition-colors">
-                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-2">
+                <div class="bg-surface border border-border rounded-lg p-8 hover:border-accent/30 transition-colors">
+                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-3">
                         <div>
-                            <h3 class="text-white font-medium">Computer Software Engineering</h3>
-                            <p class="text-accent text-sm font-mono">42 The Network</p>
+                            <h3 class="text-white font-medium text-lg">Computer Software Engineering</h3>
+                            <p class="text-accent text-base font-mono">42 The Network</p>
                         </div>
-                        <span class="text-muted text-xs font-mono shrink-0">Feb 2023 — Dec 2023</span>
+                        <span class="text-muted text-sm font-mono shrink-0">Feb 2023 — Dec 2023</span>
                     </div>
-                    <p class="text-neutral-400 text-sm">Peer-to-peer, project-based learning. Focus on C programming,
+                    <p class="text-neutral-400 text-base">Peer-to-peer, project-based learning. Focus on C programming,
                         Unix, algorithms, and collaborative development.</p>
                 </div>
 
                 <!-- UNIFOR -->
-                <div class="bg-surface border border-border rounded-lg p-6 hover:border-accent/30 transition-colors">
-                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-2">
+                <div class="bg-surface border border-border rounded-lg p-8 hover:border-accent/30 transition-colors">
+                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-3">
                         <div>
-                            <h3 class="text-white font-medium">Bachelor's in Computer Science</h3>
-                            <p class="text-accent text-sm font-mono">Universidade de Fortaleza</p>
+                            <h3 class="text-white font-medium text-lg">Bachelor's in Computer Science</h3>
+                            <p class="text-accent text-base font-mono">Universidade de Fortaleza</p>
                         </div>
-                        <span class="text-muted text-xs font-mono shrink-0">Feb 2020 — Nov 2022</span>
+                        <span class="text-muted text-sm font-mono shrink-0">Feb 2020 — Nov 2022</span>
                     </div>
-                    <p class="text-neutral-400 text-sm">Foundations in algorithms, data structures, software
+                    <p class="text-neutral-400 text-base">Foundations in algorithms, data structures, software
                         engineering, and mathematics. Unfinished.</p>
                 </div>
 
@@ -428,20 +428,20 @@
 
 
     <!-- ─── Contact ─── -->
-    <section id="contact" class="py-24 px-6">
+    <section id="contact" class="py-28 px-6">
         <div class="max-w-3xl mx-auto reveal-up text-center" x-ref="reveal">
-            <h2 class="font-mono text-xs text-accent tracking-widest uppercase mb-6">// contact</h2>
+            <h2 class="font-mono text-sm text-accent tracking-widest uppercase mb-8">// contact</h2>
 
-            <div class="bg-surface border border-border rounded-lg p-8 md:p-12">
-                <p class="text-neutral-300 text-lg mb-2">Let's connect!</p>
-                <p class="text-neutral-500 text-sm mb-8 max-w-md mx-auto">
+            <div class="bg-surface border border-border rounded-lg p-10 md:p-14">
+                <p class="text-neutral-300 text-xl mb-3">Let's connect!</p>
+                <p class="text-neutral-500 text-base mb-8 max-w-md mx-auto">
                     I'm always open to interesting conversations and new opportunities. Drop me a line anytime.
                 </p>
 
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                     <a href="mailto:arthurnunesc@proton.me"
-                        class="inline-flex items-center gap-2 px-5 py-2.5 bg-accent text-dark font-mono text-sm font-medium rounded hover:bg-accent/90 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        class="inline-flex items-center gap-2 px-6 py-3 bg-accent text-dark font-mono text-base font-medium rounded hover:bg-accent/90 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -449,8 +449,8 @@
                         arthurnunesc@proton.me
                     </a>
                     <a href="https://www.linkedin.com/in/arthurnunesc" target="_blank" rel="noopener"
-                        class="inline-flex items-center gap-2 px-5 py-2.5 border border-border text-neutral-300 font-mono text-sm rounded hover:border-accent/50 hover:text-accent transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                        class="inline-flex items-center gap-2 px-6 py-3 border border-border text-neutral-300 font-mono text-base rounded hover:border-accent/50 hover:text-accent transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
                             <path
                                 d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                         </svg>
@@ -464,7 +464,7 @@
 
     <!-- ─── Footer ─── -->
     <footer class="border-t border-border py-8 px-6">
-        <div class="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted">
+        <div class="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-muted">
             <p>&copy; 2026 Arthur Nunes</p>
             <p class="font-mono">built with ☕ &amp; <span class="text-accent">&lt;code&gt;</span></p>
         </div>
